@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<main role="main">
+
+        <div class="container py-4">
+            
+            <p class="h5">
+                <span class="detail_title_fonts">{{movie.title}}
+                </span>
+            </p>
+            <br>
+        
+          <div class="d-flex justify-content-end align-items-center">
+              <p>
+                
+                <div class="btn-group">
+                    {% if movie.netflix_url == Null %}
+                        <a href="{{movie.netflix_url}}" class="btn btn-sm btn-outline-secondary disabled" role="button" aria-pressed="true" target="_sub">Netflix</a>
+                    {% else %}
+                        <a href="{{movie.netflix_url}}" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_sub">Netflix</a>
+                    {% endif %}
+
+                    {% if movie.watcha_url == Null %}
+                        <a href="{{movie.wavve_url}}" class="btn btn-sm btn-outline-secondary disabled" role="button" aria-pressed="true" target="_sub">WATCHA</a>
+                    {% else %}
+                        <a href="{{movie.wavve_url}}" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_sub">WATCHA</a>
+                    {% endif %}
+
+                    {% if movie.google_play_url == Null %}
+                        <a href="{{movie.google_play_url}}" class="btn btn-sm btn-outline-secondary disabled" role="button" aria-pressed="true" target="_sub">google play</a>
+                    {% else %}
+                        <a href="{{movie.google_play_url}}" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_sub">google play</a>
+                    {% endif %}
+
+                    {% if movie.wavve_url == Null %}
+                        <a href="{{movie.wavve_url}}" class="btn btn-sm btn-outline-secondary disabled" role="button" aria-pressed="true" target="_sub">wavve</a>
+                    {% else %}
+                        <a href="{{movie.wavve_url}}" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_sub">wavve</a>
+                    {% endif %}
+
+                </div>
+              </p>
+          </div>
+          <br>
+      
+            <!--<a href="javascript:history.back();" class="text-decoration-none" style="font-size:12px;">뒤로가기</a><br></p>-->
+      
+      
+          <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card border-info border-rounded">
+                    <div class="card-header"><span class="fonts">인터뷰</span></div>
+                    <iframe width="100%" height="300" src="{{movie.video_url_2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card border-info">
+                    <div class="card-header"><span class="fonts">OST/음악</span></div>
+                    <iframe width="100%" height="300" src="{{movie.video_url_3}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card border-info">
+                    <div class="card-header"><span class="fonts">소개 영상</span></div>
+                    <iframe width="100%" height="300" src="{{movie.video_url_4}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card border-info">
+                    <div class="card-header"><span class="fonts">예고편/주요장면</span></div>
+                    <iframe width="100%" height="300" src="{{movie.video_url_1}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+          </div>
+        </div>
+      
+</main>
+
+<!--
+{% for movie in object_list %}
+    {{movie.title}}
+{% endfor %}
+-->
+
+{% endblock content %}

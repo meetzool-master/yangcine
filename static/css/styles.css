@@ -1,0 +1,67 @@
+.main_font {
+    font-family: 'Oxanium';
+  }
+
+.main_font_2 {
+    font-family: 'Do Hyeon';
+    font-size: 26px;
+  }
+
+.header {
+    font-family: 'Do Hyeon';
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.fonts {
+    font-size: 15px;
+    font-family: 'Do Hyeon'; 
+}
+
+.title_fonts {
+    font-size: 22px;
+    font-family: 'Do Hyeon'; 
+    border-left: 5px solid powderblue;
+    padding-left: 7px;
+}
+
+.source_fonts {
+    font-size: 14px;
+    font-family: 'Do Hyeon'; 
+}
+
+.detail_title_fonts {
+    font-size: 24px;
+    font-family: 'Do Hyeon';
+    border-left: 5px solid powderblue;
+    padding-left: 7px;
+}
+
+.detail_fonts {
+    font-size: 13px;
+    font-family: 'Do Hyeon'; 
+}
+
+.script_fonts {
+    font-size: 19px;
+    font-family: 'Do Hyeon'; 
+}
+
+.review_fonts {
+    font-size: 16px;
+    font-family: 'Do Hyeon'; 
+}
+
+.footer_fonts {
+    font-size: 15px;
+    font-family: 'Do Hyeon'; 
+}
+  /*
+  */
+  
+
+
+header {
+    background-color: powderblue !important ;
+}

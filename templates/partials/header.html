@@ -1,0 +1,59 @@
+<header>
+    <div class="collapse bg-info" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white"><span class="main_font">About</span></h4>
+            <p class="text-white">
+              <span class="header">
+              당신의 영화 리모콘
+              </span><br><br>
+              <span class="fonts">
+              씨네21, 방구석1열, 주인장 추천 영화가<span style="color:powderblue;"> 업데이트</span> 됩니다.<br>
+              <span style="color:powderblue;">더보기</span>를 누르면 인터뷰, OST, 소개 영상을 볼 수 있습니다.<br>
+              <span style="color:powderblue;">스트리밍서비스 링크</span>를 누르면 바로 영화 감상할 수 있습니다..<br>              </span>
+            </p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white"><span class="main_font">Contact</span></h4>
+            <ul class="list-unstyled">
+                <li><a href="https://www.instagram.com/yangcine_/" class="text-white"><span class="main_font">Instagram</span></a></li>
+                <li><a href="mailto:yangcine81@gmail.com?Subject=안녕하세요!" class="text-white"><span class="main_font">Email me</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-info shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="{% url 'core:home'  %}" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="main_font"><strong>yangCine</strong></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+  
+  
+  <div class="nav-scroller bg-white shadow-sm">
+    <nav class="nav nav-underline">
+        <a class="nav-link active" href="{% url 'core:home'  %}"><span class="fonts">랜덤</span></a>
+        <a class="nav-link active" href="{% url 'core:cine'  %}"><span class="fonts">씨네21</span></a>
+        <a class="nav-link active" href="{% url 'core:corner'  %}"><span class="fonts">방구석1열</span></a>
+        <a class="nav-link active" href="{% url 'core:yangcine'  %}"><span class="fonts">양씨네</span></a>
+
+      <!--
+      <a class="nav-link disabled" href="#"><span class="fonts">마이픽처스</span></a>
+      <a class="nav-link disabled" href="#"><span class="fonts">마이픽처스</span></a>
+      <a class="nav-link disabled" href="#"><span class="fonts">N03.픽처스</span></a>
+      <a class="nav-link" href="#">
+        Friends
+        <span class="badge badge-pill bg-light align-text-bottom">27</span>
+      </a>
+      -->
+    </nav>
+  </div>
